@@ -1,7 +1,7 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.11.0"
-set :rvm_type, :user
-set :rvm_ruby_version, '2.5.1'
+# set :rvm_type, :user
+# set :rvm_ruby_version, '2.5.1'
 set :rbenv_type, :user
 set :rbenv_ruby, '2.5.1'
 
@@ -26,6 +26,7 @@ set :deploy_to, "/srv/www/pruebas.com"
 
 # Default value for :linked_files is []
 # append :linked_files, "config/database.yml"
+append :linked_files, 'config/master.key'
 
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
