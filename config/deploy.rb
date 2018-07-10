@@ -6,7 +6,7 @@ set :rbenv_type, :user
 set :rbenv_ruby, '2.5.1'
 
 set :application, "rails-deploy"
-set :repo_url, "git@github.com:Ramiro6/rails-deploy.git"
+set :repo_url, "https://github.com/Ramiro6/rails-deploy.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
