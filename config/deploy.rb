@@ -4,6 +4,8 @@ lock "~> 3.11.0"
 # set :rvm_ruby_version, '2.5.1'
 set :rbenv_type, :user
 set :rbenv_ruby, '2.5.1'
+# set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/shims/rbenv exec"
+set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} /usr/bin/rbenv exec"
 
 set :application, "rails-deploy"
 set :repo_url, "https://github.com/Ramiro6/rails-deploy.git"
